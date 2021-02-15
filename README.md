@@ -7,6 +7,7 @@ ArchLinux installtion script
 ## Note
 
 * You can first try it in a `VirtualMachine`
+* Some parameters need to be input during script execution. Please refer to the script prompt for details
 
 ## Prerequisites
 

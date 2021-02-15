@@ -9,6 +9,7 @@ echo ${hostname} >> /etc/hostname
 echo "127.0.0.1 localhost" >> /etc/hosts
 echo "::1 localhost" >> /etc/hosts
 echo "127.0.0.1 ${hostname}.localdomain ${hostname}" >> /etc/hosts
+reflector --country China --latest 5 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
 pacman -S intel-ucode grub dhcpcd efibootmgr vim
 grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=Arch Linux
 grub-mkconfig -o /boot/grub/grub.cfg

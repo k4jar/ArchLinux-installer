@@ -41,7 +41,7 @@ swapon ${disk_name}2
 mount ${disk_name}3 /mnt
 mkdir /mnt/boot
 mount ${disk_name}1 /mnt/boot
-reflector --country China --latest 10 --protocol http --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+reflector --country China --latest 5 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
 pacstrap /mnt base linux linux-firmware
 genfstab -U /mnt >> /mnt/etc/fstab
 mv arch-chroot.sh /mnt/

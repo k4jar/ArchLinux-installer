@@ -2,6 +2,8 @@
 
 ArchLinux installtion script
 
+[中文简体](README_CN.md)
+
 ## Note
 
 * You can first try it in a `VirtualMachine`
@@ -13,7 +15,6 @@ ArchLinux installtion script
 
 ## Obtaining The Repository
 
-- Increase cowspace partition: `mount -o remount,size=2G /run/archiso/cowspace`
 - Get list of packages and install git: `pacman -Sy git`
 - Get the script: `git clone git@github.com:k4jar/ArchLinux-installer.git`
 
@@ -43,26 +44,26 @@ chmod +x install.sh arch-chroot.sh
 
 ![image-20210215083820784](assets/image-20210215083820784.png)
 
-修改密码
+change password for root
 
 ```
 passwd
 ```
 
-退出
+exit the Arch
 
 ```shell
 exit
 ```
 
-卸载分区
+unmount disk partition
 
 ```shell
 umount /dev/sda1
 umount /dev/sda3
 ```
 
-重启
+reboot computer
 
 ```shell
 reboot

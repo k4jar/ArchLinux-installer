@@ -1,2 +1,77 @@
 # ArchLinux-installer
+
 ArchLinux installtion script
+
+## Note
+
+* You can first try it in a `VirtualMachine`
+
+## Prerequisites
+
+- A working internet connection
+- Logged in as 'root'
+
+## Obtaining The Repository
+
+- Increase cowspace partition: `mount -o remount,size=2G /run/archiso/cowspace`
+- Get list of packages and install git: `pacman -Sy git`
+- Get the script: `git clone git@github.com:k4jar/ArchLinux-installer.git`
+
+## How to use
+
+Enter the directory
+
+![image-20210215081038520](assets/image-20210215081038520.png)
+
+add permission
+
+```shell
+chmod +x install.sh arch-chroot.sh
+```
+
+![image-20210215082506036](assets/image-20210215082506036.png)
+
+```shell
+./install.sh
+```
+
+![image-20210215082806409](assets/image-20210215082806409.png)
+
+```shell
+./arch-chroot.sh
+```
+
+![image-20210215083820784](assets/image-20210215083820784.png)
+
+修改密码
+
+```
+passwd
+```
+
+退出
+
+```shell
+exit
+```
+
+卸载分区
+
+```shell
+umount /dev/sda1
+umount /dev/sda3
+```
+
+重启
+
+```shell
+reboot
+```
+
+
+
+
+
+## License :scroll:
+
+This project is licenced under the GNU General Public License V3. For more information, see the `LICENSE` file or visit https://www.gnu.org/licenses/gpl-3.0.en.html.

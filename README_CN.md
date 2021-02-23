@@ -11,7 +11,6 @@ ArchLinux安装脚本
 
 ## 前提条件
 
-- A working internet connection
 - 登录进root用户
 - 已经联网
 
@@ -23,8 +22,6 @@ ArchLinux安装脚本
 ## 怎样使用
 
 进入目录
-
-Enter the directory
 
 ![image-20210215081038520](assets/image-20210215081038520.png)
 

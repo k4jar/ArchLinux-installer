@@ -1,18 +1,5 @@
 #!/bin/bash
-function network()
-{
-	local timeout=1
-	local target=www.baidu.com
-	local ret_code=`curl -I -s --connect-timeout ${timeout} ${target} -w %{http_code} | tail -n1`
-	if [ "${ret_code}" = "200" ];
-	then
-		echo '[+] online'
-	else
-		echo '[+] offline'
-		exit
-	fi
-}
-network
+
 timedatectl set-ntp true
 fdisk -l
 echo '[+] put in the disk name that you want to install your Atch like "/dev/sda"'
